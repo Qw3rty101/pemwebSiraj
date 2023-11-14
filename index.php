@@ -7,9 +7,9 @@
 </head>
 <body>
     <h1>login</h1>
-    <form action="./backend/login.php" method="post">
-        <input type="email" name="email" placeholder="masukkan email anda">
-        <input type="password" name="password" placeholder="masukkan password anda">
+    <form action="backend/login.php" method="post">
+        <input type="email" name="email" id="email"  placeholder="masukkan email anda">
+        <input type="password" name="password" id="password" placeholder="masukkan password anda">
         <input type="submit" value="login" name="submit">
     </form>
 

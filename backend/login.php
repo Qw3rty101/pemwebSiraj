@@ -1,8 +1,9 @@
 <?php
 session_start();
-require './../config/db.php';
+require '../config/db.php';
 
 if(isset($_POST['submit'])) {
+    global $db_connect;
 
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -19,11 +20,11 @@ if(isset($_POST['submit'])) {
 
             if ($_SESSION['role'] == 'admin'){
                 
-                header('Location:./../admin.php');
+                header('Location:../admin.php');
                 
             } else  {
                 
-                header('Location:./../profile.php');
+                header('Location:../profile.php');
             }
         } else {
             echo "password salah";

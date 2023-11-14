@@ -33,14 +33,15 @@
                     <!-- <td><img src="<?=$row['image'];?>" width="100"></td> -->
                     <td><a href="<?=$row['image'];?>" target="_blank">unduh</a></td>
                     <td>
-                        <a href="edit.php?id=<?=$row['id'];?>">Edit</a>
-                        <a href="delete.php?id=<?=$row['id'];?>">Hapus</a>
+                        <a href="backend/edit.php?id=<?=$row['id'];?>">Edit</a>
+                        <a href="backend/delete.php?id=<?=$row['id'];?>">Hapus</a>
 
                     </td>
                 </tr>
             <?php } ?>
         </tbody>
     </table>
+    <a href="admin.php">back</a>
     
 </body>
 </html>
